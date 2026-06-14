@@ -1,0 +1,21 @@
+.main-layout {
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: env(safe-area-inset-top, 0);
+
+    background-color: red;
+  }
+
+  &::after {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: env(safe-area-inset-bottom, 0);
+
+    background-color: pink;
+  }
+}
